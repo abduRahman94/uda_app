@@ -1,7 +1,7 @@
 from flask import Blueprint
 
 
-urls = Blueprint(__name__)
+urls = Blueprint('urls', __name__)
 
 
 @urls.route('/')
@@ -9,13 +9,13 @@ def index():
     pass
 
 @urls.route('/animals')
-def index():
+def animals():
     pass
 
 @urls.route('/animal')
-def index():
+def animal():
     pass
 
 @urls.route('/animals/create')
-def index():
+def create_animal():
     pass
