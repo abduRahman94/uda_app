@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 
 urls = Blueprint('urls', __name__)
@@ -6,7 +6,7 @@ urls = Blueprint('urls', __name__)
 
 @urls.route('/')
 def index():
-    pass
+    return render_template('index.html')
 
 @urls.route('/animals')
 def animals():
